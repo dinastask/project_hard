@@ -1,0 +1,168 @@
+.main
+  padding-bottom: 30px
+  &-wrapper
+    display: flex
+
+  &-content
+    width: 77%
+    &-list
+      &-item
+        display: none
+        &--active
+          display: block
+          padding: 55px 55px 100px 55px
+          border-radius: 10px 0 0 10px
+          background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
+          background-image: url(../img/main-bg.jpg)
+          background-size: cover
+          background-repeat: no-repeat
+          width: 100%
+
+  &-user
+    display: flex
+    font-family: 'Lato', sans-serif
+    &-avatar
+      width: 45px
+      height: 45px
+      border-radius: 50%
+    &-info
+      padding-left: 10px
+      display: flex
+      flex-direction: column
+      align-content: center
+      justify-content: center
+      font-style: normal
+      font-weight: normal
+      color: $light
+    &__name
+      font-size: 14px
+      line-height: 20px
+      opacity: 0.85
+    &__activity
+      font-size: 12px
+      line-height: 15px
+      opacity: 0.4
+
+  &__subtitle
+    font-family: 'Lato', sans-serif
+    margin-top: 145px
+    margin-bottom: 25px
+    color: $blue
+    font-size: 12px
+    line-height: 15px
+    display: flex
+    align-items: center
+    letter-spacing: 0.5px
+    text-transform: uppercase
+  &__title
+    margin-bottom: 45px
+    color: $light
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 40px
+    line-height: 50px
+    display: flex
+  &-buttons
+    display: flex
+    &__more
+      margin-right: 30px
+      padding: 10px 45px
+      border-radius: 20px
+      background-color: $blue
+      font-weight: 400
+      color: $light
+      font-family: 'Lato', serif
+      font-size: 14px
+      line-height: 20px
+      display: flex
+      align-items: center
+    &-wrapper
+      display: flex
+    &__play
+      color: $light
+      padding: 14px
+      line-height: 14px
+      border-radius: 50%
+      border: 2px solid rgba(255, 255, 255, 0.4 )
+      background-color: rgba(0, 0, 0, 0)
+      text-align: center
+    &-info
+      display: flex
+      font-family: 'Lato', sans-serif
+      flex-direction: column
+      padding-left: 10px
+      display: flex
+      flex-direction: column
+      align-content: center
+      justify-content: center
+      font-style: normal
+      font-weight: normal
+      color: $light
+    &__name
+      font-size: 14px
+      line-height: 20px
+      opacity: 0.85
+    &__time
+      font-size: 12px
+      line-height: 15px
+      opacity: 0.4
+  &-sidebar
+    border-radius: 0 10px 10px 0
+    width: 23%
+    background-color: $light
+    &__title
+      padding: 20px 25px
+  &-list
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    &__title
+      padding: 20px 25px
+      font-family: 'Lato', sans-serif
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+    &-block
+      padding: 18px 25px
+      cursor: pointer
+      &:nth-child(even)
+        border-top: 1px solid #D9DADB
+        border-bottom: 1px solid #D9DADB
+      &--active
+        background-color: #F5F5F5
+      &__title
+        padding-bottom: 8px
+        font-family: 'Lato', sans-serif
+        font-size: 12px
+        line-height: 15px
+        letter-spacing: 0.5px
+        text-transform: uppercase
+      &__food
+        color: $blue
+      &__cars
+        color: #6E99AE
+      &__movies
+        color: #AC8EE3
+      &__nfl
+        color: #FFA34D
+      &__reviews
+        color: #3DC47E
+      &__text
+        color: $gray-85
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+    &-button
+
+      padding: 7px
+      border: 1px solid #BCBFC2
+      border-radius: 50%
+      &__icon
+        display: block
+        transform: translatex(25% translateY(-50%))
