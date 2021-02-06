@@ -101,6 +101,7 @@
       width: 14px
       &--red
   &-additional
+    width: 263px
     align-self: flex-start
     margin-left: 30px
     padding: 20px 25px
@@ -128,6 +129,8 @@
         width: 100%
         height: 1px
         background-color: $gray-15
+    &-link
+      display: flex
 
     &-block
       display: flex
@@ -193,3 +196,98 @@
         width: 100%
         height: 1px
         background-color: $gray-15
+  &-column
+    margin-left: 30px
+    width: 263px
+    display: flex
+    flex-direction: column
+    padding: 20px 25px 0 25px
+    border-radius: 10px
+    overflow: hidden
+    background: #6E99AE
+    position: relative
+    &__title
+      padding-bottom: 20px
+      font-family: 'Lato', sans-serif
+      font-size: 14px
+      line-height: 20px
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $light
+    &-list
+      &::before
+        content: ''
+        left: 0
+        position: absolute
+        width: 100%
+        height: 1px
+        background-color: $greyblue-50
+    &-card
+      display: flex
+      flex-direction: column
+      padding-left: 10px
+      position: relative
+      margin-top: 45px
+      padding-bottom: 40px
+      &:not(:last-child)
+        border-bottom: 1px solid $greyblue-50
+      &:last-child
+        padding-bottom: 45px
+      &__title
+        margin-bottom: 15px
+        font-family: 'Roboto Slab', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 25px
+        color: $light
+        z-index: 99
+      &-author
+        display: flex
+        z-index: 99
+        align-items: center
+      &__avatar
+        margin-right: 10px
+        width: 45px
+        height: 45px
+      &__info
+        display: flex
+        flex-direction: column
+      &__name
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 20px
+        color: $greyblue-25
+      &__profession
+        font-family: 'Lato', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        line-height: 15px
+        color: $greyblue-25
+      &__quote
+        width: 40px
+        height: 40px
+        position: absolute
+        transform: translateY(-5px)
+        z-index: 1
+        top: 0
+        left: 0
+    &__more
+      margin-top: 10px
+      margin-bottom: 15px
+      font-family: 'Lato', sans-serif
+      font-size: 14px
+      line-height: 20px
+      text-align: center
+      color: $light
+      &::before
+        transform: translateY(-10px)
+        content: ''
+        left: 0
+        position: absolute
+        width: 100%
+        height: 1px
+        background-color: $greyblue-50

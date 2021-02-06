@@ -1,337 +1,260 @@
 
-.post
+.posts
   padding-top: 30px
   padding-bottom: 60px
   &-wrapper
     display: flex
-  &-icon
-    &-avatar
-      display: block
-      width: 30px
-      height: 30px
-      border-radius: 50%
-    &-coment
-      width: 14px
-      height: 13.5px
-    &-quotes
-      width: 40px
-      height: 40px
-  &-date
-    font-family: 'Lato', sans-serif
-    font-style: normal
-    font-weight: normal
-    font-size: 12px
-    line-height: 15px
-    opacity: 0.4
-
-.post
   &-grid
-    padding-right: 30px
+    width: 848px
     display: grid
     grid-gap: 30px
-    width: 878px
-    grid-template-rows: repeat(3,minmax(min-content, content))
-    grid-template-columns: repeat(3,minmax(263px, 1f))
+    grid-template-rows: repeat(4,minmax(min-content, 1fr))
+    grid-template-columns: repeat(3,minmax(min-content, 1fr))
   &-block
     padding: 25px
     border-radius: 10px
-    position: relative
+    display: flex
+    flex-direction: column
     overflow: hidden
-    &-1,&-2
-      &__label
-        font-family: 'Lato', sans-serif
-        font-size: 12px
-        line-height: 15px
-        letter-spacing: 0.5px
-        text-transform: uppercase
-        display: block
-      &__title
-        colot: $gray-100
-        font-family: 'Roboto Slab', serif
-        font-style: normal
-        font-weight: bold
-      &__text
-        color: $gray-85
-        font-family: 'Lato', sans-serif
-        font-style: normal
-        font-weight: normal
-        font-size: 14px
-        line-height: 20px
-      &__name
-        font-family: 'Lato', sans-serif
-        font-style: normal
-        font-weight: normal
-        font-size: 14px
-        line-height: 20px
-      &__coment
-        font-family: 'Lato', sans-serif
-        font-size: 14px
-        line-height: 20px
-        color: $gray-85
-      &__categories
-        display: inline-block
-        padding: 5px 12px
-        background-color: $green-75
-        font-family: 'Lato', sans-serif
-        font-size: 12px
-        line-height: 15px
-        border-radius: 3px
-      &__counter
-        font-family: 'Lato', sans-serif
-        font-style: normal
-        font-weight: normal
-        font-size: 12px
-        line-height: 15px
-        color: $gray-50
-    &-3,&-4,&-5,&-6,&-7
-      background-color: $light
-      width: 263px
-      &__date
-
-    &-4,&-5,&-6,&-7
-
-      &-content
-        background-color: $light
-      &__title
-        padding-bottom: 5px
-        font-family: 'Roboto Slab', serif
-        font-style: normal
-        font-weight: bold
-        font-size: 16px
-        line-height: 25px
-        color: $gray-100
-
-      &__text
-        padding-bottom: 10px
-        font-style: normal
-        font-weight: normal
-        font-size: 14px
-        line-height: 20px
-        color: $gray-85
-      &__date
-        padding-bottom: 10px
-    &-1
-      grid-row: 1/2
-      grid-column: 1/3
-      padding: 25px 25px 0 25px
-      background-color: $light
-      &__label
-        color: $greyblue-75
-        padding-bottom: 20px
-      &__title
-        padding-bottom: 25px
-        font-size: 25px
-        line-height: 30px
-        width: 238px
-      &__text
-        width: 228px
-        padding-bottom: 50px
-      &__bg
-        position: absolute
-        top: 0
-        right: 0
-        width: 292px
-        height: 298px
-      &-author
-        display: flex
-        align-items: center
-        justify-content: space-between
-        padding: 13px 0
-        border-top: 1px solid $gray-15
-      &__avatar
-        margin-right: 10px
-      &__name
-        padding-right: 5px
-        font-weight: bold
-        color: $gray-100
-    &-2
-      color: $light
-      grid-row: 1/2
-      grid-column: 3/4
-      display: flex
-      flex-direction: column
-      justify-content: flex-end
-      position: relative
-      &__bg
-        position: absolute
-        object-fit: cover
-        z-index: -1
-        top: 0
-        right: 0
-        width: 100%
-        height: 100%
-      &__categories
-        position: absolute
-        top: 25px
-        padding: 5px 12px
-        background-color: $green-75
-        font-family: 'Lato', sans-serif
-        font-size: 12px
-        line-height: 15px
-        border-radius: 3px
-      &__label
-        padding-bottom: 10px
-        color: $purpure-25
-      &__title
-        font-size: 16px
-        line-height: 25px
-        letter-spacing: 0.5px
-        padding-bottom: 15px
-      &-author
-        display: flex
-        align-items: center
-        justify-content: space-between
-        &-info
-          margin-left: 10px
-          display: flex
-          flex-wrap: wrap
-      &__name
-        width: 100%
-        opacity: 0.85
-      &__date
-        font-family: 'Lato', sans-serif
-        font-style: normal
-        font-weight: normal
-        font-size: 12px
-        line-height: 15px
-        opacity: 0.4
-      &__coment
-        display: flex
-        align-items: center
-        padding-left: 10px
-      &__like
-        display: flex
-        align-items: center
-        padding-left: 11px
-      &__counter
-        padding-left: 5px
-    &-3
-      grid-row: 2/4
-      grid-column: 1/2
-      padding: 0
-
-      &__bg
-        display: block
-        border-radius: 10px 10px 0 0
-        object-fit: cover
-        z-index: -1
-        top: 0
-        right: 0
-        width: 100%
-        height: 100%
-      &-content
-        padding: 25px
-
-    &-4
-      grid-row: 2/3
-      grid-column: 2/3
-
-      &-content
-        height: 100%
-        box-sizing: border-box
-    &-5
-      grid-row: 2/3
-      grid-column: 3/4
-    &-6
-      grid-row: 3/4
-      grid-column: 2/3
-    &-7
-      grid-row: 3/4
-      grid-column: 3/4
-  &-columns
-    padding: 20px 25px 15px 25px
-    background-color: $greyblue-75
+  &-cars
+    padding-bottom: 0
+    background: $light
     position: relative
-    z-index: -1
-    border-radius: 10px
-    object-fit: cover
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    &-wrapper
-
-    &__title
-      padding-bottom: 20px
-      color: $light
-      font-family: 'Lato', sans-serif
-      font-size: 14px
-      line-height: 20px
-      letter-spacing: 0.5px
-      text-transform: uppercase
-
-  &-list
-    height: 100%
-    display: flex
-    flex-direction: column
-    justify-content: space-between
-    height: auto
-    flex-grow: 1
-    &::before
-      content: ''
+    grid-row: 1/3
+    grid-column: 1/3
+    &__bg
       position: absolute
-      display: block
-      left: 0
-      width: 100%
-      height: 1px
-      background: $greyblue-50
-    &__more
-      padding-top: 10px
+      top: 15px
+      right: 0
+      width: 292px
+      height: 299px
+    &__categories
+      margin-bottom: 20px
+      color: $greyblue-75
+      z-index: 10
+    &__title
+      z-index: 10
+      max-width: 238px
+      margin-bottom: 25px
+      font-family: 'Roboto Slab', serif
+      font-style: normal
+      font-weight: bold
+      font-size: 25px
+      line-height: 30px
+      color: $gray-100
+
+    &__text
+      z-index: 10
+      margin-bottom: 50px
+      width: 228px
       font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
       font-size: 14px
       line-height: 20px
-      text-align: center
-      color: $light
-      &::before
-        transform: translateY(-10px)
+      color: $gray-85
+      position: relative
+    &-author
+      z-index: 10
+      display: flex
+      align-items: center
+      padding: 12px 0
+
+      &::after
         content: ''
         position: absolute
-        display: block
+        transform: translateY(-55px)
+        z-index: 99
+        bottom: 0
         left: 0
         width: 100%
         height: 1px
-        background: $greyblue-50
+        background-color: $gray-15
+    &__avatar
+      margin-right: 10px
+    &__name
+      margin-right: 5px
+      font-family: 'Lato', sans-serif
+      font-size: 14px
+      line-height: 20px
+      font-weight: bold
+      color: $gray-100
+    &__description
+      margin-right: 15px
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $gray-85
+    &__coment
+      display: flex
+      align-items: center
+    &__counter
+      margin-left: 5px
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $gray-50
+  &-popular
+    background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35)), url(../img/post-grid/hand-bg.png) no-repeat
+    background-size: cover
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    grid-row: 1/3
+    grid-column: 3/4
 
-  &-item
-    padding-left: 10px
-    padding-top: 35px
-    padding-bottom: 40px
-    border-bottom: 1px solid $greyblue-50
-    &:last-child
-      border: 0px
+    &__label
+      position: absolute
+      top: 18px
+      left: 18px
+      padding: 5px 12px
+      border-radius: 3px
+      background: $green-75
+      color: $light
+      font-size: 12px
+      line-height: 15px
 
+    &__categories
+      margin-bottom: 10px
+      font-family: 'Lato', sans-serif
+      font-size: 12px
+      line-height: 15px
+      display: flex
+      align-items: center
+      letter-spacing: 0.5px
+      text-transform: uppercase
+      color: $purpure-25
     &__title
-      position: relative
-      padding-bottom: 15px
-      font-family: 'Roboto-Slab', sans-serif
+      margin-bottom: 15px
+      font-family: 'Roboto Slab', sans-serif
+      margin-bottom: 15px
       font-style: normal
       font-weight: bold
-      font-size: 20px
+      font-size: 16px
       line-height: 25px
+      letter-spacing: 0.5px
+      text-transform: uppercase
       color: $light
+    &-author
+      display: flex
+      &-info
+        display: flex
+        flex-wrap: wrap
+        align-items: flex-start
+    &__avatar
+      margin-right: 10px
 
-    &__quotes
+    &__name
+      width: 100%
+
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      mix-blend-mode: normal
+      opacity: 0.85
+    &__date
+      margin-right: 10px
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      mix-blend-mode: normal
+      opacity: 0.4
+    &__coment
+      display: flex
+      align-items: center
+      margin-right: 10px
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      mix-blend-mode: normal
+      opacity: 0.4
+    &__like
+      display: flex
+      align-items: center
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $light
+      mix-blend-mode: normal
+      opacity: 0.4
+    &__counter
+      margin-left: 5px
+  &-cat
+    background-color: $light
+    position: relative
+    display: flex
+    justify-content: flex-end
+    width: 263px
+    grid-row: 3/5
+    grid-column: 1/2
+    &__bg
       position: absolute
       top: 0
       left: 0
-      transform: translateX(-10px) translateY(-10px)
+      height: 275px
 
-      z-index: -1
-    &-author
-      display: flex
-      align-items: center
-      cursor: pointer
-      &__avatar
-        margin-right: 10px
-      &-info
-        display: flex
-        flex-direction: column
-        font-family: 'Lato', sans-serif
-        font-style: normal
-        font-weight: normal
-        color: $greyblue-25
-      &__name
-        font-size: 14px
-        line-height: 20px
-      &__profession
-        font-size: 12px
-        line-height: 15px
+    &__title
+      margin-top: 15px
+      margin-bottom: 5px
+      font-family: 'Roboto Slab', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $gray-100
+  &-little
+    background-color: $light
+    display: flex
+    flex-direction: column
+    &-1
+      grid-row: 3/4
+      grid-column: 2/3
+    &-2
+      grid-row: 3/4
+      grid-column: 3/4
+    &-3
+      grid-row: 4/5
+      grid-column: 2/3
+    &-4
+      grid-row: 4/5
+      grid-column: 3/4
+    &__title
+      margin-bottom: 5px
+      font-family: 'Roboto Slab', sans-serif
+      font-style: normal
+      font-weight: bold
+      font-size: 16px
+      line-height: 25px
+      color: $gray-100
+    &__text
+      margin-bottom: 10px
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 14px
+      line-height: 20px
+      color: $gray-85
+    &__date
+      margin-bottom: 5px
+      font-family: 'Lato', sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+      color: $gray-50
