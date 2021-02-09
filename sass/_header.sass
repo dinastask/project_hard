@@ -142,19 +142,25 @@
 .navbar
   &-header
     background-color: $primary
-    display: none
+    display: block
     font-family: 'Lato', sans-serif
     &--visible
-      display: block
+      display: none
+
     &-menu
       padding: 17px 0
       display: flex
       justify-content: space-between
+      &__item
+        padding-right: 8px
+        &:last-child
+          padding-right: 0px
       &__link
         color: $light
         font-size: 14px
         line-height: 20px
         letter-spacing: 0.5px
         text-transform: uppercase
+
         &:hover
           color: rgba(255,255,255, 0.5)

@@ -1,6 +1,15 @@
 @media (max-width:1200px)
   .container
     max-width: 960px
+  .panel
+    &-top
+      &-row
+        padding: 15px
+        flex-wrap: nowrap
+      &-block
+        padding: 0 15px
+        &__content
+          font-size: 14px
 
 @media (max-width: 992px)
   .container
@@ -20,6 +29,35 @@
 
       &__daty
         margin-right: 10px
+  .navbar
+    &-header
+      &-menu
+        &__link
+          font-size: 12px
+  .panel
+    &-top
+      &-row
+        flex-wrap: wrap
+      &-block
+        padding: 10px
+        width: 50%
+        border: none
+        &:last-child
+          padding: 10px
+        &:first-child
+          padding: 10px
+        &__content
+          font-size: 14px
+  .main
+    &-content
+      &-list
+        &-item
+          &--active
+            padding: 25px 25px 25px 25px
+            display: flex
+            flex-direction: column
+    &-buttons
+
 @media (max-width: 850px)
   .container
     max-width: 700px
@@ -40,6 +78,29 @@
     &-mid
       &__logo
         display: none
+  .navbar
+    &-header
+      display: none
+      &--visible
+        display: block
+
+      &-menu
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        &__item
+          &:not(:last-child)
+            padding-bottom: 15px
+  .main
+    &-content
+      width: 100%
+    &-sidebar
+      display: none
+    &__title
+      font-size: 30px
+    &__subtitle
+      margin-top: 100px
 
 @media (max-width:  576px)
   .header
@@ -65,3 +126,16 @@
         font-size: 12px
       &-temperatyre
         font-size: 12px
+  .panel
+    &-top
+      &-block
+        width: 100%
+  .main
+    &-buttons
+      flex-direction: column
+      &__more
+        margin-bottom: 20px
+    &__title
+      margin-bottom: 20px
+    &__subtitle
+      margin-top: 50px
