@@ -1,0 +1,114 @@
+.facial
+  padding: 60px 0
+  background-image: url(../img/article/facial-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  &-content
+    display: flex
+    flex-direction: column
+    max-width: 946px
+    margin: auto
+
+  &-header
+    margin-bottom: 52px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__categories
+      color: $blue
+  &-nav
+    display: flex
+    align-items: center
+    &__home
+      margin-right: 30px
+      display: flex
+      align-items: center
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      font-weight: bold
+      &-icon
+        width: 18px
+        height: 17px
+        margin-right: 6px
+    &__arrow
+      background: rgba(0,0,0,0)
+      border: none
+      display: flex
+      align-items: center
+      font-size: 14px
+      line-height: 20px
+      color: $light
+      font-weight: bold
+      &:last-child
+        margin-left: 20px
+      &-icon
+        width: 15px
+    &__prev
+      &-icon
+        margin-right: 8px
+    &__next
+      &-icon
+        margin-left: 8px
+        transform: rotate(180deg)
+  &__title
+    margin-top: 0
+    margin-bottom: 30px
+    position: relative
+    max-width: 750px
+    font-family: 'Roboto Slab', serif
+    font-style: normal
+    font-weight: bold
+    font-size: 55px
+    line-height: 70px
+    color: $light
+  &__bokmark
+    width: 21px
+    height: 27px
+    position: absolute
+    top: 20px
+    left: -71px
+  &__text
+    max-width: 556px
+    margin-bottom: 60px
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 30px
+    color: $light
+    mix-blend-mode: normal
+    opacity: 0.85
+  &-footer
+    display: flex
+    align-items: center
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 15px
+    color: $light
+    mix-blend-mode: normal
+    opacity: 0.85
+    &__date
+      display: flex
+      align-items: center
+      margin-right: 20px
+    &__clock
+      width: 13.5px
+      margin-right: 5px
+    &__like
+      margin-right: 20px
+    &__comment
+      margin-right: 30px
+    &__counter
+      margin-left: 5px
+    &__button
+      display: flex
+      align-items: center
+      padding: 14px 21px
+      border: 1px solid rgba(255, 255, 255, 0.4)
+      border-radius: 20px
+
+      &-icon
+        width: 18px
+        margin-right: 10px

@@ -20,19 +20,54 @@ $(document).ready(function () {
     $(".navbar-header").toggleClass("navbar-header--visible");
   });
 
+
+  $(document).ready( function() {
+    /* Check width on page load*/
+    if ( $(window).width() > 768) {
+      var swiper =0;
+    }
+    else {
+      var swiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+      
+        // And if we need scrollbar
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      });
+    }
+   
+
+
+});
+
   //настройки слайдера на section main
-  const swiper = new Swiper('.swiper-container', {
+  
+  
+   //настройки слайдера на post-bottom
+  const PostBottomSwiper = new Swiper('.post-bottom-swiper-container', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
   
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+      dynamicMainBullets: {
+        number: 5 ,
+      },
+    },
+  
+
     // And if we need scrollbar
     scrollbar: {
       el: '.swiper-scrollbar',
     },
   });
-  
 
+  
   $(document).ready( function() {
     /* Check width on page load*/
     if ( $(window).width() < 768) {
@@ -41,12 +76,14 @@ $(document).ready(function () {
     else {
       
     }
+   
 
 
 });
 
-
-
-
-  
+//настройки paggenation 
+$(document).ready( function() {
+  $( ".swiper-pagination" ).prepend( "<span class='swiper-pagination-bullet' ></span>" );
+  $( ".swiper-pagination-bullet-active" ).prepend( "<span class='swiper-pagination-bullet-external' ></span>" );
+});
 });
