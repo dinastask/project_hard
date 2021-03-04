@@ -67,19 +67,33 @@ $(document).ready(function () {
     },
   });
 
+   //настройки слайдера на странице article
+   const ArticleSwiperContainer = new Swiper('.article-swiper-container', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+     
+    },
+
+      // Navigation arrows
+  navigation: {
+    nextEl: '.article-slider__button--prev',
+    prevEl: '.article-slider__button--next',
+  },
+  });
   
   $(document).ready( function() {
-    /* Check width on page load*/
-    if ( $(window).width() < 768) {
-     $('.main-content-list-item').removeClass('main-content-list-item--active');
-    }
-    else {
-      
-    }
-   
-
-
-});
+      /* Check width on page load*/
+      if ( $(window).width() < 768) {
+       $('.main-content-list-item').removeClass('main-content-list-item--active');
+      }
+      else { 
+      }
+  });
 
 //настройки paggenation 
 $(document).ready( function() {

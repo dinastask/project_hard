@@ -3,6 +3,7 @@
   margin: 0
   padding: 0
   list-style: none
+  outline: none
 
 body
   color: $primary
@@ -10,9 +11,11 @@ body
   font-family: 'Lato', sans-serif
 img
   width: 100%
-
+button
+  outline: none
+  border: none
 .button
-  outline: 0
+  outline: none
   border: none
   cursor: pointer
   background: none
@@ -47,6 +50,7 @@ a
   &-comment
     width: 14px
     height: 13.5px
+    margin-right: 5px
   &-avatar
     display: block
     width: 30px
@@ -55,6 +59,17 @@ a
   &-like
     width: 12.75px
     height: 11.7px
+  &-social
+    height: 18px
+  &-views
+    width: 15px
+    margin-right: 5px
+  &-pencil
+    width: 18px
+    height: 18px
+  &-load
+    width: 15px
+    height: 15px
 .block
   &-like
     display: flex
